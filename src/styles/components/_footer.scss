@@ -1,0 +1,79 @@
+.foot {
+    width: 100%;
+    background-image: url('../assets/images/background/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foot__wrap {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.foot__title {
+    color: $white-color;
+}
+
+.foot__list{
+    @media  screen and (min-width:$desktop) {
+        display: flex;
+    }
+}
+
+.foot__item{
+ text-align: center;
+    &:first-child{
+       margin-bottom: 50px;
+    }
+
+    @media  screen and (min-width:$desktop) {
+        width: 300px;
+        text-align: left;
+
+        &:not(:first-child){
+          margin-left: 100px;
+        }
+
+        &:first-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.foot__img{
+    display: none;
+    
+    @media  screen and (min-width:$desktop) {
+        display: block;
+        position: absolute;
+        bottom:0;
+        right: 50px;
+    }
+}
+
+.contact__list {
+    color: $accent-color;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.contact__item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
+.contact__img{
+    margin-right: 30px;
+}
+
+.contact__link{
+    color: $accent-color;
+    margin-left: 20px;
+    width: fit-content;
+}

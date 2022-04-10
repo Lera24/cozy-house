@@ -1,0 +1,58 @@
+.pets {
+    background-color: $background-color;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.pets__inner{
+    position: relative;
+}
+
+.pets__list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-bottom: 75px;
+    max-height: 540px;
+    overflow: hidden;  
+}
+
+.pets__item{
+    flex-basis: calc((900px - 3 * 20px) /3);
+    padding: 35px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: $second-background-color;
+    transition: all 500ms ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .25); 
+    }
+}
+
+.pets__subtitle {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom:25px;
+    color: $text-button-color;
+}
+
+.pets__img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+

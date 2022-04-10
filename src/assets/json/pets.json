@@ -1,0 +1,17 @@
+[
+    {
+        "img": "./images/pets/cat-katrine.png",
+        "alt": "cat-katrine",
+        "title": "Katrine"
+    },
+    {
+        "img": "./images/pets/dog-jannifer.png",
+        "alt": "dog-jannifer",
+        "title": "Jannifer"
+    },
+    {
+        "img": "./images/pets/dog-woody.png",
+        "alt": "dog-woody",
+        "title": "Woody"
+    }
+]

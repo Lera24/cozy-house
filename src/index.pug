@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css')
+        title Cozy_house
+    body 
+        .main-wrap 
+            header.head 
+                .container
+                    .head__wrap 
+                        .logo 
+                            a.logo__link(href="")
+                                h1.logo__title Cozy House
+                                h2.logo__subtitle Shelter for pets in Boston
+                        nav.head__nav 
+                            - const nav = require("/assets/json/nav.json")
+                            ul.head__list
+                                each item in nav
+                                    li.head__item
+                                        a(href=item.id).head__link=item.title
+            section.hero
+                .container 
+                    .hero__wrap 
+                        h2.hero__title Not only people need house
+                        p.hero__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.
+                        button.button.button__active.button__hero Make a friend
+                        img(src="./images/background/dog_hero.png", alt="bigl__dog").hero__img
+        main
+            section#about.about
+                .container 
+                    .about__inner 
+                        img(src="./images/about.jpg", alt="dog_and_cat").about__img
+                        .about__wrap 
+                            h2.title About the shelter <br> "Cozy House"
+                            p.about__desc.about__desc--first Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
+                            p.about__desc Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique.  Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat.
+            section#pets.pets 
+                .container.pets__inner 
+                    h2.title.title--center Our friends who <br> are looking for a house
+                    - const pets = require("/assets/json/pets.json")
+                        ul.pets__list
+                            each pet in pets 
+                                    li.pets__item
+                                        img(src=pet.img, alt=pet.alt).pets__img
+                                        h3.pets__subtitle=pet.title
+                                        button.button Learn more              
+                    button.arrow.arrow--left 
+                        include assets/images/svg/left-arrow.svg
+                    button.arrow.arrow--right
+                        include assets/images/svg/right-arrow.svg
+                    button.button.button__active Get to know the rest
+            section#help.help 
+                .container 
+                    .help__wrap 
+                        h2.title.title--center Than you can help <br> our shelter
+                        ul.help__list 
+                            - const benefits = require("/assets/json/help.json")
+                            each item in benefits 
+                                li.help__item
+                                    img(src=item.img, alt=item.title, width="50").help__img
+                                    h3.help__subtitle=item.title
+            section.donations 
+                .container 
+                    .donations__wrap
+                        img(src="./images/donation.png", alt="dog").donations__img
+                        .donations__inner
+                            h2.title In addition, you can make a donation
+                            h3.donations__subtitle Name of the bank / Type of bank account
+                            span.donations__card 
+                                include assets/images/svg/credit-card.svg 
+                                span 8380 2880 8028 8791 7435
+                            p.donations__desc Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        footer#contacts.foot
+            .container 
+                .foot__wrap 
+                    ul.foot__list 
+                        li.foot__item 
+                            h2.title.foot__title For questions and suggestions
+                            ul.contact__list 
+                                li.contact__item 
+                                    include assets/images/svg/mail.svg
+                                    a(href="mailto:email@shelter.com").contact__link email@shelter.com
+                                li.contact__item 
+                                    include assets/images/svg/tel.svg
+                                    a(href="+136745677554").contact__link +13 674 567 75 54
+                        li.foot__item 
+                            h2.title.foot__title We are waiting for your visit
+                            ul.contact__list 
+                                li.contact__item 
+                                    include assets/images/svg/pin.svg
+                                    a(href="").contact__link Boston, Central Street, 1st (Entrance from the store)
+                                li.contact__item 
+                                    include assets/images/svg/pin.svg
+                                    a(href="").contact__link London, South Park,18st
+                    img(src="./images/background/dog_foot.png", alt="cute_dog", width="300", height="315").foot__img

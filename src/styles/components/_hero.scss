@@ -1,0 +1,58 @@
+.main-wrap{
+    width: 100%;
+    background-color: $black-color;
+    background-image: url('../assets/images/background/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.hero{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero__wrap{
+    text-align: left;
+    width: 250px;
+    padding-bottom: 150px;
+    padding-top: 150px;
+
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 250px;
+        padding-top: 250px;
+        width: 456px;
+    }
+}
+
+.hero__title{
+    font-size: 44px;
+    letter-spacing: 3px;
+    line-height: 57px;
+    color: $white-color;
+    margin-bottom: 45px;
+}
+
+.hero__desc{
+    font-size: 17px;
+    line-height: 29px;
+    color: $nav-color;
+    margin-bottom: 45px;
+}
+
+.hero__img{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    right: -150px;
+    
+    @media screen and (min-width: $tablet) {
+        right: -100px;
+        max-height: 800px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        bottom: auto;
+        top:0;
+        max-height: none;
+    }
+}
