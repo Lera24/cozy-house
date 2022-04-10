@@ -20,14 +20,14 @@
     &--left{
         left: 5%;
     @media screen and (min-width: $tablet) {
-        left: -3%;
+        left: 0;
        }
     }
 
     &--right{
         right: 5%;
         @media screen and (min-width: $tablet) {
-            right: -3%;
+            right: 0;
            }
     }
 }
