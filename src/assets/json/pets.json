@@ -1,16 +1,16 @@
 [
     {
-        "img": "./images/pets/cat-katrine.png",
+        "img": "./images/pets/cat-katrine.jpg",
         "alt": "cat-katrine",
         "title": "Katrine"
     },
     {
-        "img": "./images/pets/dog-jannifer.png",
+        "img": "./images/pets/dog-jannifer.jpg",
         "alt": "dog-jannifer",
         "title": "Jannifer"
     },
     {
-        "img": "./images/pets/dog-woody.png",
+        "img": "./images/pets/dog-woody.jpg",
         "alt": "dog-woody",
         "title": "Woody"
     }
