@@ -1,0 +1,18 @@
+[
+    {
+        "id": "#about",
+        "title": "About the shelter"
+    },
+    {
+        "id": "#pets",
+        "title": "Our pets"
+    },
+    {
+        "id": "#help",
+        "title": "To help the shelter"
+    },
+    {
+        "id": "#contacts",
+        "title": "Contacts"
+    }
+]
