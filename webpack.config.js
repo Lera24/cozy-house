@@ -111,7 +111,7 @@ module.exports = {
     output: {
         filename: filename('js'),
         path: path.resolve(__dirname, 'dist'),
-       /// publicPath: 'https://lera24.github.io/cozy-house/'
+        publicPath: 'https://lera24.github.io/cozy-house/'
     },
     resolve: {
         extensions: ['.js', '.json'],
